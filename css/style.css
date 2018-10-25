@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  } 
+  body, html{
+    height: 100%;
+
+  }
+
+  header{
+    position: relative;
+    height: 100%;
+    overflow: hidden; 
+  }
+
+  header::after {
+    content: '';
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    filter: opacity(20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+  img{
+  max-width: 100%;
+  z-index: 1;
+  }
+ 
+  img, video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+  }
+  video{
+    min-width:  100%;
+    min-height: 100%;
+  }
+
+  .burger {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+  }
+  span{
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    text-align: center;
+    background: white;
+    border-radius: 3px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
